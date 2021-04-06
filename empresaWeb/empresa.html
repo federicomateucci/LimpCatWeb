@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+          
+ 
+
+  background-color: darkslategray;
+}
+
+        /* celuApaisado */
+        @media (min-width: 481px) and (max-width: 767px) {
+            .imagePc{
+                display: none;
+            }
+            .imageCelu{
+                display: none;
+            }
+            .imageapaCelu{
+                display: block;
+                margin: auto;
+            }
+}
+@media only screen and (min-width : 321px) {
+    .imagePc{
+                display: none;
+            }
+            .imageCelu{
+                display: none;
+            }
+            .imageapaCelu{
+                display: block;
+                margin: auto;
+            }
+}
+
+@media only screen and (min-width : 1224px) {
+            .imagePc{
+                display: block;
+                margin: auto;
+            }
+            .imageCelu{
+                display:none;
+            }
+            .imageapaCelu{
+                display: none;
+            }
+}
+@media (max-width: 600px) {
+            .imagePc{
+                display: none;
+            }
+            .imageCelu{
+                display: block;
+               margin: auto;
+            }
+            .imageapaCelu{
+                display: none;
+            }
+}
+hr{
+    background-color:darkslategray ;
+}
+
+    </style>
+
+
+    <title>LimpCat</title>
+</head>
+
+<body style="background-color: darkslategray;">
+
+
+
+    <map name="homeCelu">
+        <area shape="circle" coords="300,600,40" href="../home.html" alt="home">
+        <area shape="circle" coords="248,600,40" href="./filosofia.html" alt="Filosofia">
+        <area shape="circle" coords="248,600,40" href="./productos.html" alt="Productos">
+        <area shape="circle" coords="248,600,40" href="./respuestas.html" alt="Respuestas">
+    </map>
+
+    <!-- Mapeo Imagen Compu  -->
+    <map name="homePc">
+        <area shape="circle" coords="450,800,63" href="../home.html" alt="home">
+        <area shape="circle" coords="450,800,63" href="./filosofia.html" alt="Filosofia">
+        <area shape="circle" coords="450,800,63" href="./productos.html" alt="Productos">
+        <area shape="circle" coords="450,800,63" href="./respuestas.html" alt="Respuestas">
+        
+        <!-- Mapeo Imagen Celu APAISADO -->
+    </map>
+    <map name="homeapaCelu">
+        <area shape="circle" coords="148,400,40" href="../home.html" alt="home">
+        <area shape="circle" coords="148,400,40" href="./filosofia.html" alt="Filosofia">
+        <area shape="circle" coords="148,400,40" href="./productos.html" alt="Productos">
+        <area shape="circle" coords="148,400,40" href="./respuestas.html" alt="Respuestas">
+    </map>
+
+        <!-- Mapeo Imagen Tablet sin APAISAR -->
+    <map name="homeTablet">
+        <area shape="circle" coords="248,600,40" href="../home.html" alt="home">
+        <area shape="circle" coords="248,600,40" href="./filosofia.html" alt="Filosofia">
+        <area shape="circle" coords="248,600,40" href="./productos.html" alt="Productos">
+        <area shape="circle" coords="248,600,40" href="./respuestas.html" alt="Respuestas">
+    </map>
+
+        <!-- Mapeo Imagen Tableto APAISADO -->
+    <map name="homeapaTablet">
+        <area shape="circle" coords="248,600,40" href="../home.html" alt="home">
+        <area shape="circle" coords="248,600,40" href="./filosofia.html" alt="Filosofia">
+        <area shape="circle" coords="248,600,40" href="./productos.html" alt="Productos">
+        <area shape="circle" coords="248,600,40" href="./respuestas.html" alt="Respuestas">
+    </map>
+ 
+
+         <center>
+           
+
+
+     
+             <img src="/WebInJPG/WebPC/WEBSITE_empresa.png" class="imagePc" usemap="#homePc">
+             <img src="/WebInJPG/WebPhone/Limpcat_EMPRESA.svg" class="imageCelu" alt="" usemap="#homeCelu">
+             <img src="/WebInJPG/WebPhone/Limpcat_empresa_celuapaisado.svg" class="imageapaCelu" alt="#homeapaCelu">
+           
+             
+       
+          
+
+         </center> 
+
+
+
+
+
+
+
+
+</body>
+<script>
+    function popup(){
+        console.log("Tocaste ahi");
+    }
+</script>
+</html>
